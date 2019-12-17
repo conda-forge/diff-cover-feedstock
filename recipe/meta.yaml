@@ -25,6 +25,7 @@ requirements:
   run:
     - jinja2 >=2.7.1
     - jinja2_pluralize
+    - pluggy
     - pygments
     - python
     - six >=1.6.1
