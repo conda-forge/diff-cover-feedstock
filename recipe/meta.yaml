@@ -1,5 +1,5 @@
 {% set name = "diff-cover" %}
-{% set version = "2.5.2" %}
+{% set version = "2.6.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/diff_cover-{{ version }}.tar.gz
-  sha256: a5965f7b7811e98b135299e658c3748552904afa91fcc727bb1f125045ffef26
+  sha256: b58ac481a01b2f6aec115992d0981daa82cf4f8a9f8e35b2f0ad743f7a625daf
 
 build:
   noarch: python
