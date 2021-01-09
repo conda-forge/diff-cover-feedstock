@@ -5,11 +5,9 @@ Home: https://github.com/Bachmann1234/diff-cover
 
 Package license: Apache Software
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/diff-cover-feedstock/blob/master/LICENSE.txt)
 
 Summary: Automatically find diff lines that need test coverage.
-
-
 
 Current build status
 ====================
