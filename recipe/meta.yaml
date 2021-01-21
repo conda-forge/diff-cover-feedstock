@@ -20,15 +20,15 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.5
     - setuptools
-  run:
+  run:    
     - jinja2 >=2.7.1
     - jinja2_pluralize
     - pluggy
     - pygments
-    - python
-    - six >=1.6.1
+    - python >=3.5    
+    - chardet ==4.0.0
 
 test:
   imports:
@@ -40,7 +40,7 @@ test:
 
 about:
   home: https://github.com/Bachmann1234/diff-cover
-  license: Apache Software
+  license: Apache-2.0
   license_family: APACHE
   license_file: LICENSE
   summary: Automatically find diff lines that need test coverage.
