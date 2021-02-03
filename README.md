@@ -3,7 +3,7 @@ About diff-cover
 
 Home: https://github.com/Bachmann1234/diff-cover
 
-Package license: Apache Software
+Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/diff-cover-feedstock/blob/master/LICENSE.txt)
 
