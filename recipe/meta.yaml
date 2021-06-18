@@ -28,7 +28,7 @@ requirements:
     - pluggy
     - pygments
     - python >=3.6
-    - chardet ==4.0.0
+    - chardet >=3.0.0
 
 test:
   imports:
