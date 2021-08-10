@@ -20,8 +20,8 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
-    - setuptools
+    - poetry
+    - python >=3.6    
   run:
     - jinja2 >=2.7.1
     - jinja2_pluralize
