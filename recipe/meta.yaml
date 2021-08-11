@@ -1,5 +1,5 @@
 {% set name = "diff-cover" %}
-{% set version = "6.2.2" %}
+{% set version = "6.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/diff_cover-{{ version }}.tar.gz
-  sha256: f439baa4e48f974ca1887f4560878f3f71ea53590cce1431fa95f31f99c55df0
+  sha256: f55255a8855c6d2f58b1f9cd967bf27cd5c84fcc1630b785d405625aa17be99f
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
   host:
     - pip
     - poetry
-    - python >=3.6    
+    - python >=3.6
   run:
     - jinja2 >=2.7.1
     - jinja2_pluralize
