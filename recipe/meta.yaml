@@ -1,5 +1,5 @@
 {% set name = "diff-cover" %}
-{% set version = "6.3.0" %}
+{% set version = "6.3.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/diff_cover-{{ version }}.tar.gz
-  sha256: f55255a8855c6d2f58b1f9cd967bf27cd5c84fcc1630b785d405625aa17be99f
+  sha256: 21baf9d6f40ef352df4adf19b5bb4d47249c540a648fecda4647a41ff558d47c
 
 build:
   noarch: python
@@ -30,7 +30,7 @@ requirements:
     - python >=3.6
     - chardet >=3.0.0
     - setuptools >=17.0
-   
+
   run_constrained:
     - tomli >=1.2.1,<2.0
 
