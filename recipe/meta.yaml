@@ -1,5 +1,5 @@
 {% set name = "diff-cover" %}
-{% set version = "6.4.4" %}
+{% set version = "6.4.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/diff_cover-{{ version }}.tar.gz
-  sha256: b1d782c1ce53ad4b2c5545f8b7aa799eb61a0b12a62b376a18e2313c6f2d77f1
+  sha256: a94b8c1c17dc24498917f7289fe383b457d8ad4ef2a3ffca80a892a41c8b58a6
 
 build:
   noarch: python
@@ -15,24 +15,23 @@ build:
   entry_points:
     - diff-cover = diff_cover.diff_cover_tool:main
     - diff-quality = diff_cover.diff_quality_tool:main
-  script: '{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv '
+  script: '{{ PYTHON }} -m pip install . --no-deps -vv '
 
 requirements:
   host:
     - pip
     - poetry
-    - python >=3.6
+    - python >=3.6.2
   run:
-    - jinja2 >=2.7.1
-    - jinja2_pluralize >=0.3.0,<0.4
-    - pluggy >=0.13.1,<0.14
-    - pygments >=2.9.0,<3.0
-    - python >=3.6
-    - chardet >=3.0.0
+    - jinja2 >=2.7.1    
+    - pluggy >=0.13.1,<2
+    - pygments >=2.9.0
+    - python >=3.6.2
+    - chardet >=3.0.0    
     - setuptools >=17.0
 
   run_constrained:
-    - tomli >=1.2.1,<2.0
+    - tomli >=1.2.1
 
 test:
   imports:
