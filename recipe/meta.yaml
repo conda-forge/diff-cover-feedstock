@@ -1,5 +1,5 @@
 {% set name = "diff-cover" %}
-{% set version = "6.4.5" %}
+{% set version = "6.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/diff_cover-{{ version }}.tar.gz
-  sha256: a94b8c1c17dc24498917f7289fe383b457d8ad4ef2a3ffca80a892a41c8b58a6
+  sha256: 3763b4fc2ef91063ba72b50214652224b2d0a9f31544d5504596f5c4a847cd7b
 
 build:
   noarch: python
@@ -23,11 +23,11 @@ requirements:
     - poetry
     - python >=3.6.2
   run:
-    - jinja2 >=2.7.1    
+    - jinja2 >=2.7.1
     - pluggy >=0.13.1,<2
     - pygments >=2.9.0
     - python >=3.6.2
-    - chardet >=3.0.0    
+    - chardet >=3.0.0
     - setuptools >=17.0
 
   run_constrained:
