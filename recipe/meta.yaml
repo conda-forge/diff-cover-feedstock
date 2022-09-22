@@ -21,12 +21,12 @@ requirements:
   host:
     - pip
     - poetry
-    - python >=3.6.2
+    - python >=3.7.2
   run:
     - jinja2 >=2.7.1
     - pluggy >=0.13.1,<2
     - pygments >=2.9.0
-    - python >=3.6.2
+    - python >=3.7.2
     - chardet >=3.0.0
     - setuptools >=17.0
 
