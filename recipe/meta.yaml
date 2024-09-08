@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - pip
-    - poetry
+    - poetry-core
     - python >=3.8.10
   run:
     - jinja2 >=2.7.1
