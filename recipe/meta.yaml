@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/diff_cover-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/diff_cover-{{ version }}.tar.gz
   sha256: 85a0b353ebbb678f9e87ea303f75b545bd0baca38f563219bb72f2ae862bba36
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - diff-cover = diff_cover.diff_cover_tool:main
     - diff-quality = diff_cover.diff_quality_tool:main
@@ -21,18 +21,20 @@ requirements:
   host:
     - pip
     - poetry-core
-    - python >=3.8.10
+    - python {{ python_min }}
   run:
     - jinja2 >=2.7.1
     - pluggy >=0.13.1,<2
     - pygments >=2.9.0
-    - python >=3.8.10
+    - python >={{ python_min }}
     - chardet >=3.0.0
 
   run_constrained:
     - tomli >=1.2.1
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - diff_cover
     - diff_cover.violationsreporters
