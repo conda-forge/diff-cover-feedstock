@@ -1,5 +1,5 @@
 {% set name = "diff-cover" %}
-{% set version = "9.2.4" %}
+{% set version = "9.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/diff_cover-{{ version }}.tar.gz
-  sha256: 6ea44711f09199a1b8bcaa2eae002e1f337dd22f2d798fcfd62a6a1554bb2a86
+  sha256: 8185be86ad33aa1b1955d9d106f899dedcff0e908f877136b02fa97654e4793d
 
 build:
   noarch: python
@@ -25,7 +25,7 @@ requirements:
   run:
     - jinja2 >=2.7.1
     - pluggy >=0.13.1,<2
-    - pygments >=2.9.0
+    - pygments >=2.19.1
     - python >={{ python_min }}
     - chardet >=3.0.0
 
