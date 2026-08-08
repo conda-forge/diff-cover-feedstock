@@ -1,6 +1,5 @@
 {% set name = "diff-cover" %}
 {% set version = "10.4.2" %}
-{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
