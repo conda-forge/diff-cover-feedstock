@@ -1,5 +1,5 @@
 {% set name = "diff-cover" %}
-{% set version = "11.0.0" %}
+{% set version = "11.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/diff_cover-{{ version }}.tar.gz
-  sha256: 5450247cc885ac0c252f0d7a4cf91608f454377c6f88e579bc9ead410af50c36
+  sha256: 18fff3b9df6f28c62953859fb16302d1dec0189d79f3ea437c0bcad5cc60dcf3
 
 build:
   noarch: python
